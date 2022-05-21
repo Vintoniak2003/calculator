@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<title>Calculate UI</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="calc__inner">
+				<div class="calc__header">0</div>
+				<div class="calc__content">
+					<div class="row">
+						<div class="col">
+							<div class="btn btn-clear unselectable" onclick="onClicClear(0)">
+								<span> C </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn unselectable" onclick="onUnion()">
+								<img src="./assets/img/Union.svg" alt="" />
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn btn-action unselectable" onclick="onClickOperation('div')">
+								<span> ÷ </span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(7)">
+								<span> 7 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(8)">
+								<span> 8 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(9)">
+								<span> 9 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn btn-action unselectable" onclick="onClickOperation('multi')">
+								<span> × </span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(4)">
+								<span> 4 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(5)">
+								<span> 5 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(6)">
+								<span> 6 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn btn-action unselectable" onclick="onClickOperation('sub')">
+								<span> – </span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(1)">
+								<span> 1 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(2)" >
+								<span> 2 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn unselectable" onclick="onClickNumBtn(3)">
+								<span> 3 </span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="btn btn-action unselectable" onclick="onClickOperation('sum')">
+								<span> + </span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="btn btn-zero unselectable" onclick="onClickNumBtn(0)">
+								<span> 0 </span>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="btn btn-action unselectable" onclick="onCalculate()">
+								<span> = </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
